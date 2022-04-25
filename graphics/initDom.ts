@@ -15,6 +15,7 @@ export function initDom(document: Document) {
   const canvasElement = document.createElement('canvas');
   canvasElement.style.width = '100%';
   canvasElement.style.height = '100%';
+  canvasElement.style.display = 'block';
 
   const webglAttributes: WebGLContextAttributes = {};
   const gl = canvasElement.getContext('webgl2', webglAttributes);
